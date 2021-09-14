@@ -1,5 +1,4 @@
 import React from 'react';
-// import styles from '../styles/style.css'
 
 class CalculatorDesign extends React.Component {
   render() {
@@ -7,7 +6,7 @@ class CalculatorDesign extends React.Component {
       <ul className="mainList">
         <li>
           <ul className="resultList">
-              <li>Result</li>
+              <li>0</li>
           </ul>
         </li>
         <li>

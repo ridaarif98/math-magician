@@ -11,38 +11,35 @@
 
 .resultList {
   list-style: none;
-  padding: 20px 5px;
   font-size: 20px;
   display: flex;
   flex-direction: row-reverse;
-  background-color: #a1b9be;
+  background-color: #829699;
+  color: white;
   width: 100%;
 }
 
 .resultList li {
-  margin: 0 3%;
-  padding-right: 1%;
+  padding: 3% 4px;
 }
 
 .buttonList,
 .buttonListBottom {
   list-style: none;
-  padding: 0 5px;
   font-size: 20px;
   display: flex;
   flex-direction: row;
   background-color: #f1f0eb;
-  border-bottom: 1px solid #e07b39;
+  border-bottom: 1px solid #dddcd7;
   width: 100%;
 }
 
 .buttonList li,
 .buttonListBottom li {
-  margin: 0 3%;
-  padding: 1.5% 3%;
+  padding: 3% 3%;
   text-align: center;
   width: 25%;
-  border-right: 1px solid black;
+  border-right: 1px solid #dddcd7;
 }
 
 .buttonList li:last-child,
@@ -52,5 +49,5 @@
 }
 
 .buttonListBottom li:first-child {
-  width: 74%;
+  width: 58%;
 }
