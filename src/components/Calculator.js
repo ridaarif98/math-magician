@@ -1,28 +1,42 @@
 import React from 'react';
 
 class CalculatorDesign extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      a: 0,
+      b: 'AC',
+      c: '+/-',
+      d: '%',
+      e: '÷',
+      f: 7,
+      g: 8,
+      h: 9,
+      i: 'x',
+    };
+  }
   render() {
     return (
       <ul className="mainList">
         <li>
           <ul className="resultList">
-            <li>0</li>
+            <li>{this.state.a}</li>
           </ul>
         </li>
         <li>
           <ul className="buttonList">
-            <li>AC</li>
-            <li>+/-</li>
-            <li>%</li>
-            <li>÷</li>
+            <li>{this.state.b}</li>
+            <li>{this.state.c}</li>
+            <li>{this.state.d}</li>
+            <li>{this.state.e}</li>
           </ul>
         </li>
         <li>
           <ul className="buttonList">
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li>x</li>
+            <li>{this.state.f}</li>
+            <li>{this.state.g}</li>
+            <li>{this.state.h}</li>
+            <li>{this.state.i}</li>
           </ul>
         </li>
         <li>
