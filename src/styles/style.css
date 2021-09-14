@@ -1,0 +1,56 @@
+.mainList {
+  margin: 5rem 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+  background-color: burlywood;
+  padding: 0;
+  width: 58%;
+}
+
+.resultList {
+  list-style: none;
+  padding: 20px 5px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #a1b9be;
+  width: 100%;
+}
+
+.resultList li {
+  margin: 0 3%;
+  padding-right: 1%;
+}
+
+.buttonList,
+.buttonListBottom {
+  list-style: none;
+  padding: 0 5px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  background-color: #f1f0eb;
+  border-bottom: 1px solid #e07b39;
+  width: 100%;
+}
+
+.buttonList li,
+.buttonListBottom li {
+  margin: 0 3%;
+  padding: 1.5% 3%;
+  text-align: center;
+  width: 25%;
+  border-right: 1px solid black;
+}
+
+.buttonList li:last-child,
+.buttonListBottom li:last-child {
+  border-right: none;
+  background-color: #e07b39;
+}
+
+.buttonListBottom li:first-child {
+  width: 74%;
+}
