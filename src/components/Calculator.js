@@ -3,8 +3,9 @@ import React from 'react';
 class CalculatorDesign extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { result : 0};
+    this.state = { result: 0 };
   }
+
   render() {
     const { result } = this.state;
     return (
