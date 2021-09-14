@@ -11,8 +11,9 @@ class App extends React.Component {
   render() {
     const { res } = this.state;
     return (
-      <div>{ res }
-      <CalculatorDesign />
+      <div>
+        { res }
+        <CalculatorDesign />
       </div>
     );
   }
