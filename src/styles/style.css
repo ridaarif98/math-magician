@@ -51,3 +51,8 @@
 .buttonListBottom li:first-child {
   width: 58%;
 }
+
+.calculateBtn {
+  background-color: transparent;
+  border: none;
+}
