@@ -1,11 +1,11 @@
 import React from 'react';
-// import calculate from '../logic/calculator';
+import calculate from '../logic/calculator';
 
 class CalculatorDesign extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      result: 0,
+      total: 0,
       next: null,
       operation: null,
     };
@@ -13,16 +13,19 @@ class CalculatorDesign extends React.Component {
   }
 
   handleChange(e) {
-    console.log(this.state, e.target.name);
+    this.setState(
+      calculate(this.state, e.target.name),
+    );
+    console.log(this.state);
   }
 
   render() {
-    const { result } = this.state;
+    // const { result } = this.state;
     return (
       <ul className="mainList">
         <li>
           <ul className="resultList">
-            <li>{result}</li>
+            <li>{this.state.total } {this.state.operation} {this.state.next}</li>
           </ul>
         </li>
         <li>
