@@ -13,21 +13,23 @@ class CalculatorDesign extends React.Component {
   }
 
   handleChange(e) {
-    this.setState(
+    this.setState(() =>
       calculate(this.state, e.target.name),
     );
     // console.log(this.state, e.target.name);
   }
 
   render() {
+    const { total, operation, next } = this.state;
+
     return (
       <ul className="mainList">
         <li>
           <ul className="resultList">
             <li>
-              {this.state.total}
-              {this.state.operation}
-              {this.state.next}
+              {total}
+              {operation}
+              {next}
             </li>
           </ul>
         </li>
@@ -35,8 +37,8 @@ class CalculatorDesign extends React.Component {
           <ul className="buttonList">
             <li><button type="button" className="calculateBtn" name="AC" value="AC" onClick={this.handleChange}>AC</button></li>
             <li><button type="button" className="calculateBtn" name="+/-" value="+/-" onClick={this.handleChange}>+/-</button></li>
-            <li><button type="button" className="calculateBtn" name="%"  value="%" onClick={this.handleChange}>%</button></li>
-            <li><button type="button" className="calculateBtn" name="÷" value='÷' onClick={this.handleChange}>÷</button></li>
+            <li><button type="button" className="calculateBtn" name="%" value="%" onClick={this.handleChange}>%</button></li>
+            <li><button type="button" className="calculateBtn" name="÷" value="÷" onClick={this.handleChange}>÷</button></li>
           </ul>
         </li>
         <li>
