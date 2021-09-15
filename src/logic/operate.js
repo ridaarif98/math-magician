@@ -13,13 +13,13 @@ export default function operate(numberOne, numberTwo, operation) {
     return one.times(two).toString();
   }
   if (operation === '÷') {
-    if( numberTwo === '0') {
+    if (numberTwo === '0') {
       return 'Error';
     }
     return one.div(two).toString();
   }
   if (operation === '%') {
-    if( numberTwo === '0') {
+    if (numberTwo === '0') {
       return 'Error';
     }
     return one.mod(two).toString();
