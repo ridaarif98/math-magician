@@ -20,20 +20,21 @@ class CalculatorDesign extends React.Component {
   }
 
   render() {
-    const opArray = ['AC', '+/-', '%', '÷'].map((test) => <li><button type="button" className="calculateBtn" name={test} value={test} onClick={this.handleChange}>{test}</button></li>);
-    const numArrayOne = [7, 8, 9, 'x'].map((test) => <li><button type="button" className="calculateBtn" name={test} value={test} onClick={this.handleChange}>{test}</button></li>);
-    const numArrayTwo = [4, 5, 6, '-'].map((test) => <li><button type="button" className="calculateBtn" name={test} value={test} onClick={this.handleChange}>{test}</button></li>);
-    const numArrayThree = [1, 2, 3, '+'].map((test) => <li><button type="button" className="calculateBtn" name={test} value={test} onClick={this.handleChange}>{test}</button></li>);
-    const numArrayFour = [0, '.', '='].map((test) => <li><button type="button" className="calculateBtn" name={test} value={test} onClick={this.handleChange}>{test}</button></li>);
+    const opArray = ['AC', '+/-', '%', '÷'].map((test) => <li><button type="button" className="calculateBtn" name={test} key={test} value={test} onClick={this.handleChange}>{test}</button></li>);
+    const numArrayOne = [7, 8, 9, 'x'].map((test) => <li><button type="button" className="calculateBtn" name={test}  key={test} value={test} onClick={this.handleChange}>{test}</button></li>);
+    const numArrayTwo = [4, 5, 6, '-'].map((test) => <li><button type="button" className="calculateBtn" name={test}  key={test} value={test} onClick={this.handleChange}>{test}</button></li>);
+    const numArrayThree = [1, 2, 3, '+'].map((test) => <li><button type="button" className="calculateBtn" name={test}  key={test} value={test} onClick={this.handleChange}>{test}</button></li>);
+    const numArrayFour = [0, '.', '='].map((test) => <li><button type="button" className="calculateBtn" name={test}   key={test} value={test} onClick={this.handleChange}>{test}</button></li>);
 
     return (
       <ul className="mainList">
         <li>
           <ul className="resultList">
             <li>
-              {this.state.total }
+              {this.state.total}
               {this.state.operation}
-              {this.state.next}</li>
+              {this.state.next}
+            </li>
           </ul>
         </li>
         <li>
