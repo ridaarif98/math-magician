@@ -13,10 +13,7 @@ class CalculatorDesign extends React.Component {
   }
 
   handleChange(e) {
-    this.setState(() =>
-      calculate(this.state, e.target.name),
-    );
-    // console.log(this.state, e.target.name);
+    this.setState((state) => calculate(state, e.target.name));
   }
 
   render() {
