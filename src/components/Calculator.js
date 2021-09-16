@@ -23,7 +23,7 @@ function CalculatorDesign() {
       </li>
       <li>
         <ul className="buttonList">
-          {['AC', '+/-', '%', '÷'].map((btn) => (<li><button type="button" className="calculateBtn" key={btn} name={btn} value={btn} onClick={handleChange}>{btn}</button></li>))}
+          {['AC', '+/-', '%', '÷'].map((btn) => (<li key={btn}><button type="button" className="calculateBtn" name={btn} value={btn} onClick={handleChange}>{btn}</button></li>))}
         </ul>
       </li>
       <li>
@@ -45,7 +45,7 @@ function CalculatorDesign() {
       <li>
         <ul className="buttonList">
           <li><button type="button" className="calculateBtn" name="1" value="1" onClick={handleChange}>1</button></li>
-          <li><button type="button" className="calculateBtn" name="2" value="2"onClick={handleChange}>2</button></li>
+          <li><button type="button" className="calculateBtn" name="2" value="2" onClick={handleChange}>2</button></li>
           <li><button type="button" className="calculateBtn" name="3" value="3" onClick={handleChange}>3</button></li>
           <li><button type="button" className="calculateBtn" name="+" value="+" onClick={handleChange}>+</button></li>
         </ul>
