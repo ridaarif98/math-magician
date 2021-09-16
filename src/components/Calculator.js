@@ -3,17 +3,13 @@ import calculate from '../logic/calculator';
 
 function CalculatorDesign () {
   const [inputs, setInput] = useState({total: 0, next: null, operation: null});
-  console.log(inputs);
 
   const handleChange = (e) => {
 
     // spread opertae map event values to object that we pass to function
     const test = {...inputs, ...calculate(inputs, e.target.name)};
-    console.log(test);
     setInput(() => ({...test}));
   } 
-
-  
 
   return (
     <ul className="mainList">
@@ -28,10 +24,7 @@ function CalculatorDesign () {
       </li>
       <li>
         <ul className="buttonList">
-          <li><button type="button" className="calculateBtn" name="AC" value="AC" onClick= {handleChange}>AC</button></li>
-          <li><button type="button" className="calculateBtn" name="+/-" value="+/-" onClick= {handleChange}>+/-</button></li>
-          <li><button type="button" className="calculateBtn" name="%" value="%" onClick= {handleChange}>%</button></li>
-          <li><button type="button" className="calculateBtn" name="÷" value="÷" onClick= {handleChange}>÷</button></li>
+          {['AC', '+/-', '%', '÷'].map((btn) => <li><button type="button" className="calculateBtn" key={btn} name={btn} value={btn} onClick= {handleChange}>{btn}</button></li>)}
         </ul>
       </li>
       <li>
