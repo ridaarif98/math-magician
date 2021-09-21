@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Home = () => {
+function Home() {
   return (
     <section className="homeContent">
       <h1>Welcome to our Page!</h1>
       <p>
-        "Math magicians" is a website for all fans of mathematics. It is a
+        Math magicians is a website for all fans of mathematics. It is a
         Single Page App (SPA) that allows users to: Make simple calculations.
         Read a random math-related quote.
       </p>
@@ -23,5 +23,5 @@ const Home = () => {
       </p>
     </section>
   );
-};
+}
 export default Home;

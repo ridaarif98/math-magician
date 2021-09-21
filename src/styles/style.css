@@ -13,7 +13,6 @@
   height: 35px;
   background-color: #60695c;
   color: #f1f0eb;
-  /* line-height: 30px; */
 }
 
 .navBar div {
@@ -43,6 +42,22 @@
   display: flex;
   flex-direction: row;
   background-color: #60695c;
+}
+
+.resultList li {
+  padding: 3% 4px;
+  background-color: #829699;
+  font-size: 20px;
+}
+
+.buttonList li,
+.buttonListBottom li {
+  padding: 3% 3%;
+  text-align: center;
+  width: 25%;
+  background-color: #cac9c5;
+  border-right: 1px solid #dddcd7;
+  font-size: 20px;
 }
 
 .navBar .navBarLink li {
@@ -120,12 +135,6 @@
   width: 100%;
 }
 
-.resultList li {
-  padding: 3% 4px;
-  background-color: #829699;
-  font-size: 20px;
-}
-
 .buttonList,
 .buttonListBottom {
   list-style: none;
@@ -135,16 +144,6 @@
   background-color: #f1f0eb;
   border-bottom: 1px solid #dddcd7;
   width: 100%;
-}
-
-.buttonList li,
-.buttonListBottom li {
-  padding: 3% 3%;
-  text-align: center;
-  width: 25%;
-  background-color: #cac9c5;
-  border-right: 1px solid #dddcd7;
-  font-size: 20px;
 }
 
 .buttonList li:last-child,

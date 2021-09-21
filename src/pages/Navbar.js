@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/calculator.png';
 
-const Navbar = () => {
+function Navbar() {
   const links = [
     {
       id: 1,
@@ -16,8 +16,8 @@ const Navbar = () => {
     },
     {
       id: 3,
-      path: '/Qoute',
-      text: 'Qoute',
+      path: '/Quote',
+      text: 'Quote',
     },
   ];
   return (
@@ -39,6 +39,6 @@ const Navbar = () => {
       </ul>
     </nav>
   );
-};
+}
 
 export default Navbar;
