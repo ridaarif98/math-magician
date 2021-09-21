@@ -20,8 +20,9 @@ const Navbar = () => {
     },
   ]
   return (
-    <nav>
-      <ul>
+    <nav className="navBar">
+      <h1> Math Magician</h1>
+      <ul className="navBarLink">
         {links.map(link => {
           return <li key={link.id}>
              <Link to={link.path}> {link.text}</Link>
