@@ -1,12 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #b7b7a4;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+  height: 35px;
+  background-color: #60695c;
+  color: #f1f0eb;
+}
+
+.navBar div {
+  display: flex;
+  flex-direction: row;
+  line-height: 30px;
+  background-color: #60695c;
+}
+
+.navBar h1 {
+  letter-spacing: 0.02rem;
+  font-weight: 800;
+  background-color: #60695c;
+}
+
+.navBar img {
+  height: 30px;
+  width: 40px;
+  margin: 0;
+  padding-top: 2px;
+  padding-right: 5px;
+  background-color: #60695c;
+}
+
+.navBar .navBarLink {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  background-color: #60695c;
+}
+
+.resultList li {
+  padding: 3% 4px;
+  background-color: #829699;
+  font-size: 20px;
+}
+
+.buttonList li,
+.buttonListBottom li {
+  padding: 3% 3%;
+  text-align: center;
+  width: 25%;
+  background-color: #cac9c5;
+  border-right: 1px solid #dddcd7;
+  font-size: 20px;
+}
+
+.navBar .navBarLink li {
+  padding: 0 10px;
+  background-color: #60695c;
+}
+
+.navBar .links {
+  text-decoration: none;
+  background-color: #60695c;
+  color: #f1f0eb;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.navBar .links:hover {
+  color: #ccd5ae;
+}
+
+.homeContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 15px 30px;
+  padding: 10px;
+}
+
+.homeContent h1 {
+  display: flex;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.homeContent p {
+  display: flex;
+  justify-content: flex-start;
+  padding: 3px 20px;
+  margin-right: 5%;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 00.02rem;
+}
+
+.calculateDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.calculateDiv h3 {
+  margin: 6rem 5%;
+  font-size: 30px;
+  font-weight: 600;
+  color: #f1f0eb;
+}
+
 .mainList {
-  margin: 5rem 20%;
+  margin: 5rem 5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   list-style-type: none;
   background-color: burlywood;
   padding: 0;
-  width: 58%;
+  width: 55%;
 }
 
 .resultList {
@@ -19,10 +135,6 @@
   width: 100%;
 }
 
-.resultList li {
-  padding: 3% 4px;
-}
-
 .buttonList,
 .buttonListBottom {
   list-style: none;
@@ -32,14 +144,6 @@
   background-color: #f1f0eb;
   border-bottom: 1px solid #dddcd7;
   width: 100%;
-}
-
-.buttonList li,
-.buttonListBottom li {
-  padding: 3% 3%;
-  text-align: center;
-  width: 25%;
-  border-right: 1px solid #dddcd7;
 }
 
 .buttonList li:last-child,
@@ -55,4 +159,25 @@
 .calculateBtn {
   background-color: transparent;
   border: none;
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.quotes {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 50px;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.quotes p {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 15%;
+  width: 80%;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.02rem;
 }
