@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch} from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import './styles/style.css';
 import CalculatorDesign from './components/Calculator';
 import Home from './pages/Home';
@@ -16,21 +16,21 @@ class App extends React.Component {
     const { res } = this.state;
     return (
       <>
-      <Navbar />
-      <Switch>
-        <Route exact path="/calculator">
-          <div>
-            { res }
-            <CalculatorDesign />
-          </div>
-        </Route>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/Qoute">
-          <Qoute />
-        </Route>
-      </Switch>
+        <Navbar />
+        <Switch>
+          <Route exact path="/calculator">
+            <div>
+              {res}
+              <CalculatorDesign />
+            </div>
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/Qoute">
+            <Qoute />
+          </Route>
+        </Switch>
       </>
     );
   }

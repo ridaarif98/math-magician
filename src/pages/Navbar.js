@@ -1,40 +1,44 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import logo from "../images/calculator.png"
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../images/calculator.png';
 
 const Navbar = () => {
   const links = [
     {
-        id: 1,
-        path: "/",
-        text: "Home",
+      id: 1,
+      path: '/',
+      text: 'Home',
     },
     {
-        id: 2,
-        path: "/calculator",
-        text: "Calculator",
+      id: 2,
+      path: '/calculator',
+      text: 'Calculator',
     },
     {
       id: 3,
-      path: "/Qoute",
-      text: "Qoute",
-  },
-  ]
+      path: '/Qoute',
+      text: 'Qoute',
+    },
+  ];
   return (
     <nav className="navBar">
       <div>
-      <img src={logo} alt="logo"/>
-      <h1> Math Magician</h1>
+        <img src={logo} alt="logo" />
+        <h1> Math Magician</h1>
       </div>
       <ul className="navBarLink">
-        {links.map(link => {
-          return <li key={link.id}>
-             <Link to={link.path} className="links"> {link.text}</Link>
-            </li>  
+        {links.map((link) => {
+          return (
+            <li key={link.id}>
+              <Link to={link.path} className="links">
+                {link.text}
+              </Link>
+            </li>
+          );
         })}
       </ul>
     </nav>
   );
-}
+};
 
 export default Navbar;

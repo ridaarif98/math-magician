@@ -4,6 +4,11 @@
    - Make simple calculations.
    - Read a random math-related quote.
 
+
+## Live
+
+  [LiveDemo](https://ridaarif98.github.io/)
+
 ## Built with 
 
 **React**
