@@ -16,7 +16,7 @@ function CalculatorDesign() {
 
   return (
     <div className="calculateDiv">
-      <h3>Let's do some Math!</h3>
+      <h3>Let&apos;s do some Math!</h3>
       <ul className="mainList">
         <li>
           <ul className="resultList">
