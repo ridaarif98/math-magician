@@ -7,7 +7,7 @@
 
 ## Live
 
-  [LiveDemo](https://ridaarif98.github.io/)
+  [LiveDemo](https://ridaarif98.github.io/math-magician/)
 
 ## Built with 
 

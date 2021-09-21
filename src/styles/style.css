@@ -156,16 +156,12 @@
   width: 58%;
 }
 
-.buttonList li:hover,
-.buttonListBottom li:hover {
-  background-color: #829699;
-}
-
 .calculateBtn {
   background-color: transparent;
   border: none;
   font-size: 16px;
   font-weight: 400;
+  width: 100%;
 }
 
 .quotes {
