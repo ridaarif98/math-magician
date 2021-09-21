@@ -27,7 +27,7 @@ function Navbar() {
         <h1> Math Magician</h1>
       </div>
       <ul className="navBarLink">
-        {links.map((link) => <li key={link.id}><Link to={link.path} className="links">{link.text}</Link></li>,)}
+        {links.map((link) => <li key={link.id}><Link to={link.path} className="links">{link.text}</Link></li>)}
       </ul>
     </nav>
   );
