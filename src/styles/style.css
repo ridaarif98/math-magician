@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #b7b7a4;
 }
 
 .navBar {
@@ -9,17 +10,23 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 10px 20px;
-  height: 40px;
+  height: 35px;
+  background-color: #60695c;
+  color: #f1f0eb;
   /* line-height: 30px; */
 }
+
 .navBar div {
   display: flex;
   flex-direction: row;
   line-height: 30px;
+  background-color: #60695c;
 }
+
 .navBar h1 {
   letter-spacing: 0.02rem;
   font-weight: 800;
+  background-color: #60695c;
 }
 
 .navBar img {
@@ -28,28 +35,31 @@
   margin: 0;
   padding-top: 2px;
   padding-right: 5px;
+  background-color: #60695c;
 }
 
 .navBar .navBarLink {
   list-style: none;
   display: flex;
   flex-direction: row;
+  background-color: #60695c;
 }
 
 .navBar .navBarLink li {
   padding: 0 10px;
+  background-color: #60695c;
 }
 
 .navBar .links {
   text-decoration: none;
-  color: black;
+  background-color: #60695c;
+  color: #f1f0eb;
   font-weight: 600;
   font-size: 17px;
 }
 
 .navBar .links:hover {
-  color: darkslategray;
-  font-size: 18px;
+  color: #ccd5ae;
 }
 
 .homeContent {
@@ -75,6 +85,7 @@
   font-weight: 400;
   letter-spacing: 00.02rem;
 }
+
 .calculateDiv {
   display: flex;
   flex-direction: row;
@@ -85,6 +96,7 @@
   margin: 6rem 5%;
   font-size: 30px;
   font-weight: 600;
+  color: #f1f0eb;
 }
 
 .mainList {
@@ -110,6 +122,8 @@
 
 .resultList li {
   padding: 3% 4px;
+  background-color: #829699;
+  font-size: 20px;
 }
 
 .buttonList,
@@ -128,7 +142,9 @@
   padding: 3% 3%;
   text-align: center;
   width: 25%;
+  background-color: #cac9c5;
   border-right: 1px solid #dddcd7;
+  font-size: 20px;
 }
 
 .buttonList li:last-child,
@@ -141,9 +157,16 @@
   width: 58%;
 }
 
+.buttonList li:hover,
+.buttonListBottom li:hover {
+  background-color: #829699;
+}
+
 .calculateBtn {
   background-color: transparent;
   border: none;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .quotes {
