@@ -9,12 +9,25 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 10px 20px;
-  height: 30px;
+  height: 40px;
+  /* line-height: 30px; */
 }
-
+.navBar div {
+  display: flex;
+  flex-direction: row;
+  line-height: 30px;
+}
 .navBar h1 {
   letter-spacing: 0.02rem;
   font-weight: 800;
+}
+
+.navBar img {
+  height: 30px;
+  width: 40px;
+  margin: 0;
+  padding-top: 2px;
+  padding-right: 5px;
 }
 
 .navBar .navBarLink {

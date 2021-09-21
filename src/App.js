@@ -18,13 +18,13 @@ class App extends React.Component {
       <>
       <Navbar />
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/calculator">
           <div>
             { res }
             <CalculatorDesign />
           </div>
         </Route>
-        <Route exact path="/Home">
+        <Route exact path="/">
           <Home />
         </Route>
         <Route exact path="/Qoute">
