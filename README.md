@@ -7,8 +7,9 @@
 
 ## Live
 
-[LiveDemo](https://ridaarif98.github.io/math-magician/)
-[Heroku](https://murmuring-dusk-71749.herokuapp.com/)
+- [LiveDemo](https://ridaarif98.github.io/math-magician/)
+- [Heroku](https://murmuring-dusk-71749.herokuapp.com/)
+- [Netlify](https://jovial-davinci-5da205.netlify.app/)
 
 ## Built with
 
