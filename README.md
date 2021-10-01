@@ -1,41 +1,42 @@
-# Math Magician 
+# Math Magician
 
- "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
-   - Make simple calculations.
-   - Read a random math-related quote.
+"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
 
+- Make simple calculations.
+- Read a random math-related quote.
 
 ## Live
 
-  [LiveDemo](https://ridaarif98.github.io/math-magician/)
+[LiveDemo](https://ridaarif98.github.io/math-magician/)
+[Heroku](https://murmuring-dusk-71749.herokuapp.com/)
 
-## Built with 
+## Built with
 
 **React**
 
-## Getting Started 
+## Getting Started
 
 ### Setup
 
-- Open your terminal or command lines and copy these commands 
+- Open your terminal or command lines and copy these commands
 
- ```cmd 
-   git clone https://github.com/ridaarif98/math-magician.git
-   cd math-magician
-  ```
+```cmd
+  git clone https://github.com/ridaarif98/math-magician.git
+  cd math-magician
+```
 
-### Install 
+### Install
 
-   ```cmd 
-   npm install
-   npm run build
-  ```
+```cmd
+npm install
+npm run build
+```
 
-### Usage 
+### Usage
 
-  ```cmd
-  npm start
-  ```
+```cmd
+npm start
+```
 
 ## Author
 
@@ -56,6 +57,7 @@ Feel free to check the [issues page](https://github.com/ridaarif98/math-magician
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
+
 - Microverse for giving me this chance
 - To my Stand Up Team and coding partners who kept my morale up!
 - The amazing code reviewers for making me improve every day :thumbsup:
